@@ -37,7 +37,8 @@ router.post('/functions', async function(req, res, next) {
   let product_id = req.body.id;
   console.log(product_id);
   if(req.body.btt=="delete")deleteFunc(product_id)
-  else if(req.body.btt=="update")await updateProduct(req.body.id,req.body.name,req.body.price,req.body.quantity,req.body.shop_id);
+  else if(req.body.btt=="update") updateProduct(req.body.id,req.body.name,req.body.price,req.body.quantity,req.body.shop_id);
+  console.log(req.body.id,req.body.name,req.body.price,req.body.quantity,req.body.shop_id);
   let username = ssion.user_id;
   let shop_id = req.body.shop_id
   let table_string = await display_table(shop_id)
