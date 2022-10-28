@@ -1,9 +1,9 @@
 const pg_conn = require("./pg_config");
 
 async function select_box(){
-    var shop_query = `SELECT shops.name,shops.id FROM shops JOIN users on users.shop_id = shops.id WHERE users.role ='shop'`;
+    var shop_query = `SELECT shops.name,shops.id FROM shops JOIN users on users.shop_id = shops.id WHERE users.role ='NV'`;
     var data = await pg_conn.query(shop_query);
-    let num_shop = data.rowCount; 
+    let num_shop = data.rows.length; 
     console.log(num_shop);
     let select_box_string = 
     `   <form action="select_shop" method="POST">
