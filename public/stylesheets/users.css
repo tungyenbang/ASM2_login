@@ -1,0 +1,14 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    height:30vh;
+  }
+  
+  body{
+    background: linear-gradient(#eed7d7, #9198e5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  }

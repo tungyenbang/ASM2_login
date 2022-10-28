@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='/stylesheets/style.css' /> 
+    <title>Document</title>
+    <style>
+      body{
+        width: 100%;
+  height: 100vh;
+  background: url("../images/login-poster1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      }
+      button,
+      input[type="submit"] {
+        background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      }
+      button:hover,
+      input[type="submit"]:hover {
+        background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+      }
+      input[type="text"]{
+        background: #efeffa00;
+    font-size: 16px;
+    padding: 0px 8px;
+      }
+      input[type="text"]:focus{
+       font-size: 16px;
+       background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      .home_header{
+        width: 85%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+      }
+      .button_header{
+    background: #efeffa00;
+    border: 1px solid #efeffa00;
+    border-radius: 5px;
+    color: #efeffa;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+      }
+      .button_header:hover{
+        transition: 0.7s;
+        color: black;
+        background: #efeffa;
+      }
+      .logotitle{
+        color: #fff;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="home_header">
+    <h2 class="logotitle">ATN SHOP</h2>
+    <a href="http://localhost:3000/logout"><input type="button" value="logout" class="button_header"></a>
+  </div>
+    <div class="table_dashboard">
+        <table class="table_form">
+          <thead>
+            <th class="thead_product"><h3>ID</h3></th>
+            <th class="thead_product"><h3>Product name</h3></th>
+            <th class="thead_product"><h3>Quantity</h3></th>
+            <th class="thead_product"><h3>Price</h3></th>
+            <th class="thead_product"><h3>Update</h3></th>
+            <th class="thead_product"><h3>Delete</h3></th>
+          </thead>
+          <%- products %>
+        </table>
+    </div>
+  <!-- </div> -->
+  </div>
+  </body>
+</html>

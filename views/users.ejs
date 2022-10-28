@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/users.css' />
+  </head>
+  <style>.center {
+    margin-left: auto;
+    margin-right: auto;
+    height:30vh;
+  }</style>
+  <body onload = "JavaScript:AutoRefresh(10000);">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= name %></p>
+    <p> <%-table_string%></p>
+    <a href="/logout" class="header_logout">Logout</a>
+  
+  </body>
+</html>

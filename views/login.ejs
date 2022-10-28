@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <script src="routes/login.js"></script>
+  </head>
+  <body>
+    <div class="box">
+		<div class="form">
+			<h1>Login</h1>
+			<form action="/login" method="post">
+				<div class="inputBox">
+				<input type="text" name="username"  id="username" required>
+		        <span>Username</span>
+				<i></i>
+				</div>
+				<div class="inputBox">
+				<input type="password" name="password"  id="password" required>
+				<span>Password</span>
+				<i></i>
+			    </div>
+				<div class="link">
+				<p> <%= notice %></p>
+			    </div>
+				<input type="submit" value="Login">
+		
+			</form>
+		</div>
+	</div>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"
+        />
+		<link rel='stylesheet' href='/stylesheets/login.css' />
+		<script src="routes/login.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+                    <form action="/login" method="post" name="Login_Form" class="form-signin" >
+                        <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                        <p class="text-white-50 mb-5">Please enter your username and password!</p>
+      
+                        <div class="form-outline form-white mb-4">
+                            <label class="form-label" for="username">Username</label>
+                            <input type="text" id="username" name="username" class="form-control form-control-lg" required />
+                        </div>
+                    
+                        <div class="form-outline form-white mb-4">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control form-control-lg" required />
+                        </div>
+      
+                        <button class="btn btn-outline-light btn-lg px-5" name="login" value="login" type="submit">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+</body>
+</html>
